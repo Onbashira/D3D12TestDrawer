@@ -156,6 +156,8 @@ void K3D12::Cube::RegistBundle()
 {
 
 	_bundleList.GetCommandList()->IASetPrimitiveTopology(D3D12_PRIMITIVE_TOPOLOGY::D3D_PRIMITIVE_TOPOLOGY_TRIANGLELIST);
+	//_bundleList.GetCommandList()->IASetPrimitiveTopology(D3D12_PRIMITIVE_TOPOLOGY::D3D_PRIMITIVE_TOPOLOGY_3_CONTROL_POINT_PATCHLIST);
+
 
 	BindingShaderObjectToBundle();
 	BindingIndexBuffer(&_bundleList);

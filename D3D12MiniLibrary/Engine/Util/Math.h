@@ -108,7 +108,7 @@ unsigned int Comb(unsigned int n, unsigned int r);
 //ちょっと早いSQRT
 float		QuickSqrt(float value);
 
-//フレネル項
+//各屈折率からフレネル項を求める
 float		Fresnel(float n1, float n2, float cosTheta);
 double		Fresnel(double n1, double n2, double cosTheta);
 

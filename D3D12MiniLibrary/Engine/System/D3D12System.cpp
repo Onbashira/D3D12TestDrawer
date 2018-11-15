@@ -624,6 +624,14 @@ HRESULT D3D12System::InitializePrimitivePSO()
 		OutputDebugStringA((char*)error->GetBufferPointer());
 	}
 
+	//if (FAILED(D3DCompileFromFile(L"./Engine/Shader/HullShader.hlsl", nullptr, &includes, "PsMain", "hs_5_0", compileFlag, 0, &ps, &error))) {
+	//	OutputDebugStringA((char*)error->GetBufferPointer());
+	//	return E_FAIL;
+	//}
+	//if (error != nullptr) {
+	//	OutputDebugStringA((char*)error->GetBufferPointer());
+	//}
+
 	//頂点入力レイアウトの定義
 	D3D12_INPUT_ELEMENT_DESC inputElementDesc[] = {
 		{ "POSITION",  0, DXGI_FORMAT_R32G32B32_FLOAT,    0, D3D12_APPEND_ALIGNED_ELEMENT, D3D12_INPUT_CLASSIFICATION_PER_VERTEX_DATA, 0 },
